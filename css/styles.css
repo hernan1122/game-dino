@@ -42,7 +42,7 @@ body {
     height: 6px;
     width: 100%;
     position: relative;
-    background-image: url(./img/land.png);
+    background-image: url('../img/land.png');
     background-repeat: repeat;
     background-size: contain;
     -webkit-animation: road_land .6s infinite linear;
@@ -80,7 +80,7 @@ body {
     z-index: -1;
 }
 .elements::before {
-    background-image: url(./img/cloud.PNG);
+    background-image: url('../img/cloud.PNG');
     top: -170px;
     right: -350px;
     -webkit-animation: move_cloud_1 var(--speed) infinite linear;
@@ -98,7 +98,7 @@ body {
     background-size: cover;
 }
 .elements::after {
-    background-image: url(./img/cloud.PNG);
+    background-image: url('../img/cloud.PNG');
     top: -140px;
     right: -30px;
     -webkit-animation: move_cloud_2 var(--speed) infinite linear;
