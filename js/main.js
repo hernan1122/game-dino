@@ -63,7 +63,11 @@ let live = setInterval(function () {
     if (rightCactus > 505 && rightCactus < 540 && topDino > -85) {
         audio_game_over.play();
         reset_time();
-        alert('Game Over ' + "\n" + "Your time: " + `${timeString}`);
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'PERDISTE',
+      })
         document.body.classList.add('preload');
     }
 
@@ -82,7 +86,7 @@ const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/
 if (isMobile) {
 
     if (window.innerHeight > window.innerWidth) {
-        alert("Please Rotate Your Phone");
+      Swal.fire('Rote su teléfono')
     }
 
     document.addEventListener('touchstart', function () {
